@@ -24,7 +24,7 @@ int BFS(int r1, int c1, int r2, int c2){
     q.push({r1,c1});
     visited[r1][c1] = true;
 
-    if(r1 == r2 && c1 == c2) return 0;
+    if(r1 == r2 && c1 == c2) return 0;//같을 떄 처리도 고려
 
     while (!q.empty()) {
         //탐색
